@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+html, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #23252C;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card{
+    width: 317px;
+    height: 780px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    background: #1A1B21;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.info-container{
+    width: 100%;
+    color: #fff;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.photo{
+    background-image: url('https://via.placeholder.com/317');
+    width: 100%;
+    height: 317px;
+}
+.name{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 30px 0 5px;
+    text-align: center;
+}
+.role{
+    font-size: 12.8px;
+    font-weight: 400;
+    color: #F3BF99;
+    margin: 0;
+}
+.text{
+    font-size: 10.24px;
+    font-weight: 400;
+    color: #F5F5F5;
+    margin: 5px 0 20px;
+}
+.buttons-container{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.email, .linkedin{
+    width: 115px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email{
+    background: #fff;
+    color: #374151;
+}
+.linkedin{
+    background: #5093E2;
+    color: #fff;
+}
+.fa-envelope, .fa-linkedin{
+    margin-right: 12px;
+    font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.about-container, .interests-container{
+    width: 245px;
+    margin: 20px auto 0;
+}
+.headline{
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+.subline{
+    color: #DCDCDC;
+    font-size: 10.24px;
+    font-weight: 400;
+    margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+    background: #161619;
+    display: flex;
+    justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 150px;
+}
+.link{
+    cursor: pointer;
+}
+.fa-twitter-square, 
+.fa-facebook-square, 
+.fa-instagram-square, 
+.fa-github-square{
+    font-size: 25px;
+    color: #918E9B;
 }
